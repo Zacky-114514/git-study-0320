@@ -1,0 +1,60 @@
+.menu {
+    width: 100%;
+    font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+}
+
+.menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    @include sp{
+            display: inline-block;
+        }    
+}
+
+.menu-item {
+    width: 25.7%;
+    height: 100%;
+    @include sp{
+            padding-bottom:20px;
+            width: 100%;
+        }
+
+    &_title {
+        font-size:1.7rem;
+        text-align: center;
+        letter-spacing: 5px; 
+        @include sp{
+            text-align: left;
+            padding: 20px;
+            font-size: 40px;
+        }  
+    }
+
+    &_text {
+        padding: 20px;
+        font-size: 16px;
+        @include sp{
+            font-size: 24px;
+        }
+    }
+
+    &_price {
+        font-size: 1rem;
+        text-align: right;
+        @include sp{
+            padding: 20px;
+            font-size: 20px;
+        }  
+    }
+}
+
+.menu-img {
+    width: 100%;
+}
+
+img{
+    @include sp{
+            height: 100%;
+            width: 100%;
+    }
+}

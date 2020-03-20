@@ -1,0 +1,108 @@
+.concept {
+    background:linear-gradient(to bottom,#A193861F 50%, rgba(136, 114, 94, 0.537) 50%);
+    @include sp{
+            height: 100%;
+            background:linear-gradient(to bottom,#A193861F 35%, rgba(136, 114, 94, 0.537) 35%);
+        }
+}
+
+.concept-title {
+    @extend.title;
+    font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+    @include sp{
+            padding-bottom: 50px;
+            font-size:24px;
+        }
+}
+
+.concept-img {
+    display: flex;
+    justify-content: space-between;
+
+    &_1 {
+        height: 413px;
+        @include sp{
+            width: 50%;
+            height: 250px;
+            position: relative;
+            overflow: hidden;
+            margin-right: 10px;
+        }
+    }
+
+    &_2{
+        height: 413px;
+        @include sp{
+            width: 50%;
+            height: 250px;
+            position: relative;
+            overflow: hidden;
+        }
+    }
+}
+
+.ci1 {
+    @include sp{
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-60%, -50%);
+        height: 100%;
+        width: 200%;
+    }
+}
+
+.ci2{
+    @include sp{
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: auto;
+
+    }
+}
+
+.concept-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 1;
+    margin: 0px 50px;
+    @include sp{
+            display: inline-block;
+            margin: 0;
+        }    
+}
+
+.concept-text_1 {
+    width: 55%;
+    font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+    letter-spacing: 14px;
+    font-size: 40px;
+    text-align: center;
+    @include sp{
+        width: 100%;
+        font-size: 24px;
+        padding-top:40px;
+        padding-bottom: 20px;
+        letter-spacing: 7px;
+        }   
+}
+
+.concept-text_2 {
+    width: 45%;
+    height: 170px;
+    font-size: 16px;
+    font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+    overflow: hidden;
+    padding-top: 40px;
+    @include sp{
+            width: 100%;
+            padding: 0px;
+            font-size: 22px;
+            height: 210px;
+        }
+}

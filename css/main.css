@@ -1,0 +1,658 @@
+@charset "UTF-8";
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=reset.css.map */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+.title, .concept-title, .access-title {
+  font-size: 18px;
+  padding-top: 150px;
+  letter-spacing: 5.4px;
+  color: #707070;
+  opacity: 1;
+}
+@media screen and (max-width: 600px) {
+  .title, .concept-title, .access-title {
+    padding: 60px 10px;
+    font-size: 24px;
+  }
+}
+.title--bold {
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+.title:after, .concept-title:after, .access-title:after {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid;
+  width: 4rem;
+  margin-right: 1.7rem;
+  color: #707070;
+  margin-bottom: 0.4rem;
+  margin-left: 22px;
+}
+
+.inner, .access-inner, .reserve-inner {
+  width: 75%;
+  margin: 0 auto;
+  padding: 90px 0;
+}
+@media screen and (max-width: 600px) {
+  .inner, .access-inner, .reserve-inner {
+    width: 90%;
+    padding: 0;
+    padding-bottom: 60px;
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 70px;
+  position: absolute;
+  z-index: 10;
+}
+@media screen and (max-width: 600px) {
+  header {
+    justify-content: space-between;
+    padding: 20px;
+    position: static;
+  }
+}
+
+.salon-logo {
+  font-size: 38px;
+  letter-spacing: 3.8px;
+  color: #000000;
+  font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+  opacity: 1;
+}
+@media screen and (max-width: 600px) {
+  .salon-logo {
+    font-size: 22px;
+  }
+}
+
+nav {
+  width: 500px;
+  padding-left: 20px;
+  opacity: 1;
+  font-size: 1.4rem;
+  z-index: 10;
+}
+@media screen and (max-width: 959px) {
+  nav {
+    display: none;
+  }
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  color: #707070;
+}
+
+li:first-child {
+  display: block;
+  content: "";
+  border-bottom: 1px solid black;
+  color: black;
+}
+
+.ham {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .ham {
+    width: 25px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .ham span {
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+  }
+}
+
+span:nth-child(3) {
+  width: 50%;
+}
+
+.first-v {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 800px;
+  opacity: 1;
+  text-align: center;
+}
+
+.first-v_menu {
+  width: 42%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  font-size: 38px;
+}
+@media screen and (max-width: 600px) {
+  .first-v_menu {
+    width: 100vw;
+    background-image: url(../img/1/Blond\ woman\ with\ long\ curly\ beautiful\ hair@2x.png);
+    background-size: cover;
+  }
+}
+
+.first-v_wrap {
+  position: absolute;
+  top: 45%;
+  left: 8%;
+}
+@media screen and (max-width: 600px) {
+  .first-v_wrap {
+    top: 50%;
+    left: 15%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.first-v_wrap_hear {
+  padding-left: 50px;
+}
+@media screen and (max-width: 600px) {
+  .first-v_wrap_hear {
+    color: white;
+  }
+}
+.first-v_wrap_catch {
+  font-style: italic;
+  font-size: 2.1rem;
+  padding: 20% 0%;
+  font-family: 'Zapfino',sans-serif;
+  letter-spacing: 5.8px;
+}
+@media screen and (max-width: 600px) {
+  .first-v_wrap_catch {
+    color: white;
+  }
+}
+
+.first-v_img {
+  width: 58%;
+  height: 100%;
+  background-image: url(../img/1/Blond\ woman\ with\ long\ curly\ beautiful\ hair@2x.png);
+  background-size: cover;
+}
+@media screen and (max-width: 600px) {
+  .first-v_img {
+    display: none;
+  }
+}
+
+.concept {
+  background: linear-gradient(to bottom, #A193861F 50%, rgba(136, 114, 94, 0.537) 50%);
+}
+@media screen and (max-width: 600px) {
+  .concept {
+    height: 100%;
+    background: linear-gradient(to bottom, #A193861F 35%, rgba(136, 114, 94, 0.537) 35%);
+  }
+}
+
+.concept-title {
+  font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .concept-title {
+    padding-bottom: 50px;
+    font-size: 24px;
+  }
+}
+
+.concept-img {
+  display: flex;
+  justify-content: space-between;
+}
+.concept-img_1 {
+  height: 413px;
+}
+@media screen and (max-width: 600px) {
+  .concept-img_1 {
+    width: 50%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+}
+.concept-img_2 {
+  height: 413px;
+}
+@media screen and (max-width: 600px) {
+  .concept-img_2 {
+    width: 50%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ci1 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-60%, -50%);
+    height: 100%;
+    width: 200%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ci2 {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: auto;
+  }
+}
+
+.concept-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 1;
+  margin: 0px 50px;
+}
+@media screen and (max-width: 600px) {
+  .concept-text {
+    display: inline-block;
+    margin: 0;
+  }
+}
+
+.concept-text_1 {
+  width: 55%;
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+  letter-spacing: 14px;
+  font-size: 40px;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .concept-text_1 {
+    width: 100%;
+    font-size: 24px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    letter-spacing: 7px;
+  }
+}
+
+.concept-text_2 {
+  width: 45%;
+  height: 170px;
+  font-size: 16px;
+  font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+  overflow: hidden;
+  padding-top: 40px;
+}
+@media screen and (max-width: 600px) {
+  .concept-text_2 {
+    width: 100%;
+    padding: 0px;
+    font-size: 22px;
+    height: 210px;
+  }
+}
+
+.menu {
+  width: 100%;
+  font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+}
+
+.menu-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  .menu-wrap {
+    display: inline-block;
+  }
+}
+
+.menu-item {
+  width: 25.7%;
+  height: 100%;
+}
+@media screen and (max-width: 600px) {
+  .menu-item {
+    padding-bottom: 20px;
+    width: 100%;
+  }
+}
+.menu-item_title {
+  font-size: 1.7rem;
+  text-align: center;
+  letter-spacing: 5px;
+}
+@media screen and (max-width: 600px) {
+  .menu-item_title {
+    text-align: left;
+    padding: 20px;
+    font-size: 40px;
+  }
+}
+.menu-item_text {
+  padding: 20px;
+  font-size: 16px;
+}
+@media screen and (max-width: 600px) {
+  .menu-item_text {
+    font-size: 24px;
+  }
+}
+.menu-item_price {
+  font-size: 1rem;
+  text-align: right;
+}
+@media screen and (max-width: 600px) {
+  .menu-item_price {
+    padding: 20px;
+    font-size: 20px;
+  }
+}
+
+.menu-img {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.access {
+  width: 100%;
+  background-color: #A193861F;
+}
+
+.access-inner {
+  width: 100%;
+}
+
+.access-title {
+  margin: 0 135px;
+  font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .access-title {
+    margin: 0 10px;
+  }
+}
+
+.access-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  .access-wrap {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    height: 100%;
+  }
+}
+
+.access-text {
+  background-color: #D0C5BA;
+  width: 35%;
+  padding: 100px 120px;
+  display: flex;
+  color: white;
+  line-height: 40px;
+  font-family: 'ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .access-text {
+    width: 100%;
+    padding: 30px 20px;
+    display: inline-block;
+  }
+}
+
+th {
+  font-size: 24px;
+  color: #00000038;
+  text-align: left;
+}
+@media screen and (max-width: 600px) {
+  th {
+    font-size: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+td {
+  font-size: 16px;
+}
+@media screen and (max-width: 600px) {
+  td {
+    font-size: 20px;
+    line-height: 60px;
+  }
+}
+
+.map {
+  width: 65%;
+}
+@media screen and (max-width: 600px) {
+  .map {
+    width: 100%;
+    height: 350px;
+  }
+}
+
+.reserve {
+  width: 100%;
+  height: 342px;
+  display: block;
+  justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  .reserve {
+    height: 450px;
+  }
+}
+
+.reserve-line {
+  padding-top: 150px;
+}
+
+.reserve-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+@media screen and (max-width: 600px) {
+  .reserve-wrap {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+.reserve-logo {
+  font-size: 32px;
+  color: #7070704D;
+  letter-spacing: 3px;
+}
+@media screen and (max-width: 600px) {
+  .reserve-logo {
+    margin-top: 50px;
+    padding-right: 180px;
+    font-size: 24px;
+  }
+}
+
+.fab {
+  color: black;
+}
+
+.reserve-button {
+  width: 184px;
+  height: 37px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+  font-size: 18px;
+  color: #707070;
+  letter-spacing: 4px;
+}
+@media screen and (max-width: 600px) {
+  .reserve-button {
+    margin: 30px 100px;
+    width: 250px;
+    font-size: 24px;
+  }
+}
+
+.test {
+  width: 50%;
+  font-size: 35px;
+}
+@media screen and (max-width: 600px) {
+  .test {
+    margin-top: 50px;
+    width: auto;
+    font-size: 24px;
+  }
+}
+
+.reserve-inner {
+  padding: 0px;
+}
+
+/*# sourceMappingURL=main.css.map */

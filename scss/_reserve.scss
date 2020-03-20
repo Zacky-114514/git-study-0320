@@ -1,0 +1,67 @@
+.reserve {
+    width: 100%;
+    height: 342px;
+    display: block;
+    justify-content: space-between;
+    @include sp{
+        height: 450px;
+    }
+}
+
+.reserve-line {
+    padding-top:150px;
+}
+
+.reserve-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    @include sp{
+        flex-wrap: wrap-reverse;
+    }
+}
+
+.reserve-logo {
+    font-size: 32px;
+    color:#7070704D ;
+    letter-spacing: 3px;
+    @include sp{
+        margin-top:50px;
+        padding-right: 180px;
+        font-size: 24px;
+    }
+}
+
+.fab {
+        color:black;
+    }
+.reserve-button{
+    width: 184px;
+    height: 37px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+    font-size: 18px;
+    color: #707070;
+    letter-spacing: 4px;
+    @include sp{
+        margin:30px 100px;
+        width: 250px;
+        font-size: 24px;
+    }
+}
+
+.test {
+    width: 50%;
+    font-size: 35px ;
+    @include sp{
+        margin-top:50px;
+        width:auto;
+        font-size: 24px;
+    }
+}
+
+.reserve-inner {
+    @extend .inner;
+    padding:0px;
+}
